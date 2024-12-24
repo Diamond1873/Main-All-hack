@@ -1,0 +1,203 @@
+-- GUI to Lua
+-----
+-- Version: 2.0.
+-- Made by chrisopdemobiel.
+
+-- Instances
+
+local BaconHUB = Instance.new("ScreenGui")
+local onoff = Instance.new("ImageButton")
+local Frame = Instance.new("Frame")
+local Laft = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local MAIN = Instance.new("TextButton")
+local Top = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local MAIN_2 = Instance.new("Frame")
+local Top1 = Instance.new("TextLabel")
+local TPALLPLAYERS = Instance.new("TextButton")
+local OFF = Instance.new("Frame")
+local ON = Instance.new("Frame")
+
+--Properties:
+
+BaconHUB.Name = "BaconHUB"
+BaconHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BaconHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+onoff.Name = "onoff"
+onoff.Parent = BaconHUB
+onoff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+onoff.BackgroundTransparency = 1.000
+onoff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+onoff.BorderSizePixel = 0
+onoff.Position = UDim2.new(0.100052111, 0, 0.283333331, 0)
+onoff.Size = UDim2.new(0.0521104746, 0, 0.0925925896, 0)
+onoff.Image = "rbxassetid://99935381157747"
+
+Frame.Parent = BaconHUB
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.217300609, 0, 0.109212354, 0)
+Frame.Size = UDim2.new(0.56487757, 0, 0.71018517, 0)
+
+Laft.Name = "Laft"
+Laft.Parent = Frame
+Laft.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Laft.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Laft.BorderSizePixel = 0
+Laft.Position = UDim2.new(0.0155814197, 0, 0.110516123, 0)
+Laft.Size = UDim2.new(0.242619932, 0, 0.867014349, 0)
+
+ScrollingFrame.Parent = Laft
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
+
+MAIN.Name = "MAIN"
+MAIN.Parent = ScrollingFrame
+MAIN.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+MAIN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MAIN.BorderSizePixel = 0
+MAIN.Position = UDim2.new(0.0418250933, 0, 0.0120300753, 0)
+MAIN.Size = UDim2.new(0, 241, 0, 67)
+MAIN.Font = Enum.Font.Bangers
+MAIN.Text = "MAIN"
+MAIN.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAIN.TextScaled = true
+MAIN.TextSize = 14.000
+MAIN.TextWrapped = true
+
+Top.Name = "Top"
+Top.Parent = Frame
+Top.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Top.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(-0.000411593181, 0, -0.000305255351, 0)
+Top.Size = UDim2.new(1, 0, 0.0938722268, 0)
+
+TextButton.Parent = Top
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0156825446, 0, 0.0694444478, 0)
+TextButton.Size = UDim2.new(0.204797044, 0, 0.847222209, 0)
+TextButton.Font = Enum.Font.Bangers
+TextButton.Text = "BaconHUB"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.219557196, 0, 0.305555552, 0)
+TextLabel.Size = UDim2.new(0.184501842, 0, 0.694444418, 0)
+TextLabel.Font = Enum.Font.Bangers
+TextLabel.Text = "by: tung natthapon"
+TextLabel.TextColor3 = Color3.fromRGB(110, 111, 111)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+MAIN_2.Name = "MAIN"
+MAIN_2.Parent = Frame
+MAIN_2.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+MAIN_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MAIN_2.BorderSizePixel = 0
+MAIN_2.Position = UDim2.new(0.272961497, 0, 0.110516123, 0)
+MAIN_2.Size = UDim2.new(0.713099658, 0, 0.867014349, 0)
+
+Top1.Name = "Top1"
+Top1.Parent = MAIN_2
+Top1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Top1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top1.BorderSizePixel = 0
+Top1.Position = UDim2.new(0.0177461486, 0, 0.0138262529, 0)
+Top1.Size = UDim2.new(0.962483823, 0, 0.0751879662, 0)
+Top1.Font = Enum.Font.Bangers
+Top1.Text = "MAIN"
+Top1.TextColor3 = Color3.fromRGB(110, 111, 111)
+Top1.TextScaled = true
+Top1.TextSize = 14.000
+Top1.TextWrapped = true
+
+TPALLPLAYERS.Name = "TPALLPLAYERS"
+TPALLPLAYERS.Parent = MAIN_2
+TPALLPLAYERS.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+TPALLPLAYERS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TPALLPLAYERS.BorderSizePixel = 0
+TPALLPLAYERS.Position = UDim2.new(0.0168175939, 0, 0.124812029, 0)
+TPALLPLAYERS.Size = UDim2.new(0.962483823, 0, 0.109774433, 0)
+TPALLPLAYERS.Font = Enum.Font.Bangers
+TPALLPLAYERS.Text = "TP ALL PLAYERS"
+TPALLPLAYERS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TPALLPLAYERS.TextScaled = true
+TPALLPLAYERS.TextSize = 14.000
+TPALLPLAYERS.TextWrapped = true
+TPALLPLAYERS.TextXAlignment = Enum.TextXAlignment.Left
+
+OFF.Name = "OFF"
+OFF.Parent = TPALLPLAYERS
+OFF.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+OFF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OFF.BorderSizePixel = 0
+OFF.Position = UDim2.new(0.854058385, 0, 0.1369863, 0)
+OFF.Size = UDim2.new(0.122311831, 0, 0.712328792, 0)
+
+ON.Name = "ON"
+ON.Parent = TPALLPLAYERS
+ON.BackgroundColor3 = Color3.fromRGB(253, 255, 255)
+ON.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ON.BorderSizePixel = 0
+ON.Position = UDim2.new(0.854058385, 0, 0.1369863, 0)
+ON.Size = UDim2.new(0.122311831, 0, 0.712328792, 0)
+ON.Visible = false
+ON.ZIndex = 2
+
+Frame.Visible = false
+
+--------------------------------------------------------------------
+local player = game:GetService("Players").LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local root = char.HumanoidRootPart
+
+
+
+onoff.MouseButton1Up:Connect(function()
+	if Frame.Visible == false then
+		Frame.Visible = true
+	elseif Frame.Visible == true then
+		Frame.Visible = false
+	end
+end)
+
+local TPALLPLAYERSdb = false
+TPALLPLAYERS.MouseButton1Up:Connect(function()
+	local oldpos = root.CFrame
+	if ON.Visible == false then
+		ON.Visible = true
+		TPALLPLAYERSdb = true
+		repeat
+		for i,v in pairs(game.Players:GetChildren()) do
+			local vroot = v.Character and v.Character.HumanoidRootPart
+			if vroot then
+				root.CFrame = oldpos
+				vroot.CFrame = root.CFrame
+			end
+			end
+		until TPALLPLAYERSdb == false
+	elseif ON.Visible == true then
+		ON.Visible = false
+		TPALLPLAYERSdb = false
+	end
+end)
